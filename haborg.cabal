@@ -1,0 +1,27 @@
+Name:          haborg
+Version:       0.1.0
+Synopsis:      MUD client focusing on ease of use
+Description:   MUD client focusing on ease of use by means of artificial intelligence
+Homepage:      http://github.com/tobiassjosten/haborg
+License:       AGPL
+License-file:  LICENSE
+Author:        Tobias Sjösten
+Maintainer:    tobias@tobiassjosten.net
+Category:      MUD, Telnet, Games
+Build-type:    Simple
+Cabal-version: >=1.8
+
+Library
+    hs-source-dirs: src
+    exposed-modules: Haborg
+    Build-depends:  base
+
+Executable haborg
+    Main-is:        Main.hs
+    hs-source-dirs: src
+    Build-depends:  base, network, stm
+    ghc-options:    -Wall
+
+source-repository head
+    type:     git
+    location: https://github.com/tobiassjosten/haborg
